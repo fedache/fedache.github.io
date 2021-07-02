@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Afe Oludare</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,24 +18,157 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
+  <style>
+    html {
+      background: linear-gradient(45deg, #0D080D, #3e3a4d) no-repeat fixed;
+    }
+
+    body {
+      margin: 0;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 10em;
+      margin-right: 10em;
+      margin-top: 5em;
+    }
+
+    @media (max-width: 480px) {
+      .content {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
+      }
+    }
+
+    .profile-img {
+      border-radius: 49%;
+      flex-basis: 200px;
+      margin-right: 1.5rem;
+    }
+
+    .main-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #DAA496;
+      height: 150px;
+    }
+
+    @media (max-width: 480px) {
+      .main-title {
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+    }
+
+    .main-title * {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 0.2em 0;
+      font-weight: bolder;
+    }
+
+    section {
+      flex-basis: 100%;
+      margin-top: 2em;
+    }
+
+    section h2 {
+      background: #9CC7E9;
+      color: #28273A;
+      font-size: 1.5em;
+      margin-top: 1.5rem;
+      font-weight: 800;
+      display: inline-block;
+      padding: 1rem 1rem 1rem 2rem
+    }
+
+    section .section-content {
+      max-width: 60em;
+    }
+
+    @media (max-width: 480px) {
+      section .section-content {
+        max-width: 30em;
+      }
+    }
+
+    a {
+      color: lightcyan;
+    }
+  </style>
 </head>
 
 <body>
+<div class="content">
+  <img class="profile-img" src="img/profile.jpg" width="150" alt="Profile image"/>
+  <div class="main-title">
+    <h1>Afe Oludare</h1>
+    <p>Software Engineer</p>
+  </div>
+  <section>
+    <h2>Introduction</h2>
+    <p class="section-content">I'm a software developer with more experience in Android Development. I try and be
+      dynamic with the tools I use,
+      but in reality I hit the ground running working with certain technologies:</p>
+  </section>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <section>
+    <h2>Tools</h2>
+    <ul class="section-content">
+      <li> Primary programming languages: Java, Kotlin, Python, Javascript, SQL.
+        Other Languages: Bash
+      </li>
+      <li> Libraries/ Framework: Spring Boot.</li>
+      <li> Build Servers: TravisCI, CircleCI.</li>
+      <li>DB: ElasticSearch, Postgres</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Where am I at?</h2>
+    <ul class="section-content">
+      <li><a href="https://www.linkedin.com/in/fedache/">Linkedin</a></li>
+      <li><a href="https://github.com/fedache">Github</a></li>
+    </ul>
+  </section>
+  <section>
+    <h2>Random Stuff</h2>
+    <p>Fiddles charts with d3.js</p>
+    <ul>
+      <li><a href="https://jsfiddle.net/fedache/96t9wbur/">Visualizing submissions</a></li>
+    </ul>
+  </section>
+</div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
