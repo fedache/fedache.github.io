@@ -1,0 +1,97 @@
+html {
+    background: linear-gradient(45deg, #0D080D, #3e3a4d) no-repeat fixed;
+}
+
+body {
+    margin: 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 5em;
+}
+
+@media (max-width: 480px) {
+    .content {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+}
+
+.profile-img {
+    border-radius: 49%;
+    margin-right: 1.5rem;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #DAA496;
+    height: 150px;
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+.main-title * {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.2em 0;
+    font-weight: bolder;
+}
+
+section {
+    flex-basis: 100%;
+    margin-top: 2em;
+}
+
+section h2 {
+    background: #9CC7E9;
+    color: #28273A;
+    font-size: 1.5em;
+    margin-top: 1.5rem;
+    font-weight: 800;
+    display: inline-block;
+    padding: 1rem 1rem 1rem 2rem
+}
+
+section .section-content {
+    max-width: 60em;
+}
+
+@media (max-width: 480px) {
+    section .section-content {
+        max-width: 30em;
+    }
+}
+
+a {
+    color: lightcyan;
+}
+
+.image-list {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+}
+
+.image-list a img {
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
